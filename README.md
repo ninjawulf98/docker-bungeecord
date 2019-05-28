@@ -1,8 +1,8 @@
-This is a Docker image of [BungeeCord](https://www.spigotmc.org/wiki/bungeecord/)
+This is a Docker image of [Travertine](https://papermc.io/)
 and is intended to be used at the front-end of a cluster of
 [itzg/minecraft-server](https://hub.docker.com/r/itzg/minecraft-server/) containers.
 
-[![Docker Automated buil](https://img.shields.io/docker/automated/itzg/bungeecord.svg)](https://hub.docker.com/r/itzg/bungeecord/)
+[![Docker Automated buil](https://img.shields.io/docker/automated/ninjawulf98/travertine.svg)](https://hub.docker.com/r/ninjawulf98/travertine/)
 
 ## Using with itzg/minecraft-server image
 
@@ -22,13 +22,13 @@ docker run ... -e ONLINE_MODE=FALSE itzg/minecraft-server
   The Jenkins job ID of the artifact to download and run and is used when
   deriving the default value of `BUNGEE_JAR_URL`
 
-* **BUNGEE_BASE_URL**=https://ci.md-5.net/job/BungeeCord
+* **BUNGEE_BASE_URL**=https://papermc.io/ci/job/Travertine
 
   Used to derive the default value of `BUNGEE_JAR_URL`
 
-* **BUNGEE_JAR_URL**=${BUNGEE_BASE_URL}/${BUNGEE_JOB_ID}/artifact/bootstrap/target/BungeeCord.jar
+* **BUNGEE_JAR_URL**=${BUNGEE_BASE_URL}/${BUNGEE_JOB_ID}/artifact/bootstrap/target/Travertine.jar
 
-  If set, can specify a custom, fully qualified URL  of the BungeeCord.jar
+  If set, can specify a custom, fully qualified URL  of the Travertine.jar
 
 * **MEMORY**=512m
 
@@ -83,4 +83,4 @@ docker run ... -e ONLINE_MODE=FALSE itzg/minecraft-server
 This image may be run as a non-root user but does require an attached `/server`
 volume that is writable by that uid, such as:
 
-    docker run ... -u $uid -v $(pwd)/data:/server itzg/bungeecord
+    docker run ... -u $uid -v $(pwd)/data:/server ninjawulf98/travertine
