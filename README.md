@@ -26,7 +26,7 @@ docker run ... -e ONLINE_MODE=FALSE itzg/minecraft-server
 
   Used to derive the default value of `BUNGEE_JAR_URL`
 
-* **BUNGEE_JAR_URL**=${BUNGEE_BASE_URL}/${BUNGEE_JOB_ID}/artifact/bootstrap/target/Travertine.jar
+* **BUNGEE_JAR_URL**=${BUNGEE_BASE_URL}/${BUNGEE_JOB_ID}/artifact/Travertine-Proxy/bootstrap/target/Travertine.jar
 
   If set, can specify a custom, fully qualified URL  of the Travertine.jar
 
