@@ -3,7 +3,7 @@
 BUNGEE_JAR=$BUNGEE_HOME/Travertine.jar
 
 if [[ ! -e $BUNGEE_JAR ]]; then
-    echo "Downloading ${BUNGEE_JAR_URL:=${BUNGEE_BASE_URL}/${BUNGEE_JOB_ID:-lastStableBuild}/artifact/bootstrap/target/Travertine.jar}"
+    echo "Downloading ${BUNGEE_JAR_URL:=${BUNGEE_BASE_URL}/${BUNGEE_JOB_ID:-lastStableBuild}/artifact/Travertine-Proxy/bootstrap/target/Travertine.jar}"
     if ! curl -o $BUNGEE_JAR -fsSL $BUNGEE_JAR_URL; then
         echo "ERROR: failed to download" >&2
         exit 2
