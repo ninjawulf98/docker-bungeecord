@@ -4,7 +4,7 @@ VOLUME ["/server", "/plugins", "/config"]
 WORKDIR /server
 
 ENV BUNGEE_HOME=/server \
-    BUNGEE_BASE_URL=https://ci.md-5.net/job/BungeeCord \
+    BUNGEE_BASE_URL=https://papermc.io/ci/job/Travertine \
     MEMORY=512m
 
 COPY *.sh /usr/bin/
