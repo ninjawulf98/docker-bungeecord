@@ -21,7 +21,7 @@ if [ -d /config ]; then
 fi
 
 if [ $UID == 0 ]; then
-  chown -R bungeecord:bungeecord $BUNGEE_HOME
+  chown -R velocity:velocity $BUNGEE_HOME
 fi
 
 echo "Setting initial memory to ${INIT_MEMORY:-${MEMORY}} and max to ${MAX_MEMORY:-${MEMORY}}"
