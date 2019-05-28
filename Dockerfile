@@ -18,4 +18,4 @@ RUN set -x \
 	&& adduser -u 1000 -D -S -G velocity velocity \
 	&& addgroup velocity wheel
 
-CMD ["/usr/bin/run-velocity.sh"]
+CMD ["/usr/bin/run-bungeecord.sh"]
