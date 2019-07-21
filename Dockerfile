@@ -5,7 +5,7 @@ WORKDIR /server
 
 ENV BUNGEE_HOME=/server \
     BUNGEE_BASE_URL=https://ci.velocitypowered.com/job/velocity \
-    BUNGEE_JAR=velocity-proxy-1.0.3-SNAPSHOT-all.jar
+    BUNGEE_JAR=velocity-proxy-1.0.3-SNAPSHOT-all.jar \
     MEMORY=512m
 
 COPY *.sh /usr/bin/
